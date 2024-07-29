@@ -65,14 +65,14 @@ header .toggle{
     position: relative;
     width: 30px;
     height: 30px;
-    background: url(images/menu.png);
+    background: url(https://Siddhantshinde10.github.io/Portfolio/images/menu.png);
     cursor: pointer;
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
 }
 header .toggle.active{
-    background: url(images/close.png);
+    background: url(https://Siddhantshinde10.github.io/Portfolio/images/menu.png);
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
