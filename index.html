@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Port<span class="head">Folio</span></a>
+            <div class="toggle"></div>
+        </header>
+        <img src="images/file.png" class="photo">
+        <div class="content">
+            <div class="contentBox">
+                <h4>Hello,</h4>
+                <h2>I'm <span>Siddhant Shinde,</span></h2>
+                <h3>Final Year BTech Student,</h3>
+                <p class="para">I am currently pursuing my B.Tech in Electronics Engineering from Veermata Jijabai<br>Technological Institute (VJTI), Mumbai. With a strong interest in the software domain,<br> I am actively seeking full-time job opportunities upon graduation. <br></p>
+                <a href="https://drive.google.com/file/d/18eEC9czRM-hwY73refHI7jmuz6Qd-oa5/view?usp=drive_link" target="_blank" class="btn btn-light">Resume</a>
+            </div>
+        </div>
+
+        <ul class="sec1">
+            <li><a href="https://www.facebook.com/profile.php?id=100077199324382&mibextid=ZbWKwL" target="_blank"><img src="images/facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/siddhantshinde10?igsh=Zm9xdHd5b2s1d3M2" target="_blank"><img src="images/instagram.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/siddhantshinde?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="Images/icons8-linkedin-41.png"></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a class="" href="index.html">Home</a></li>
+            <li><a class="" href="about.html">About</a></li>
+            <li><a class="" href="academics.html">Academics</a></li>
+            <li><a class="" href="projects.html">My Work</a></li>
+            <li><a class="" href="extras.html">Acheivements</a></li>
+            <li><a class="" href="contact.html">Contact</a></li>
+        </ul>
+
+    </section>
+
+    <script>
+        let banner = document.querySelector('.banner');
+        let menutoggle = document.querySelector('.toggle');
+
+        menutoggle.onclick = function(){
+            menutoggle.classList.toggle('active');
+            banner.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+<style>
+    .type{
+        height: 75px;
+        font-weight: bold;
+        font-size: 70px;
+    }
+    .button{
+        border-radius: 50%;
+        box-sizing: border-box;
+        background-color: rgb(61, 60, 60);
+        width: 80px;
+        height: 80px;
+    }
+    .button:hover{
+        background-color: yellow;
+    }
+    b{
+        font-size: 40px;
+    }
+</style>
+
+</head>
+<body>
+    <div class="col-md-4 col-sm-12 bg-dark border borger-lg mt-2 p-4 text-center mx-auto text-white">
+        <H1>CALCULATOR</H1>
+        
+        <form name="myform">
+            <input type="text" name="text" id="formula"
+            class="mt-4 form-control type text-end">
+        </form>
+        
+        <div class="mt-3 row">
+            <div class="col-md-3 col-sm-6 col-12 p-3 ">
+                <div class="btn text-danger button" onclick="Clear()"><b>C</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-success button" onclick="Del()"><b><-</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-success button" onclick="display('%')"><b>%</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-success button" onclick="display('/')"><b>/</b></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-3 ">
+                <div class="btn button" onclick="display('7')"><b>7</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn  button" onclick="display('8')"><b>8</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn  button" onclick="display('9')"><b>9</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-success button" onclick="display('*')"><b>x</b></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-3 ">
+                <div class="btn button" onclick="display('4')"><b>4</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn  button" onclick="display('5')"><b>5</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn  button" onclick="display('6')"><b>6</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-success button" onclick="display('-')"><b>-</b></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-3 ">
+                <div class="btn button" onclick="display('1')"><b>1</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn  button" onclick="display('2')"><b>2</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn  button" onclick="display('3')"><b>3</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-success button" onclick="display('+')"><b>+</b></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-3 ">
+                <div class="btn button" onclick="display('00')"><b>00</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn button" onclick="display('0')"><b>0</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn button" onclick="display('.')"><b>.</b></div>
+            </div>
+            <div class="col-md-3 p-3 ">
+                <div class="btn text-white bg-success button" onclick="output()"><b>=</b></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let x = document.getElementById("formula");
+    
+        function Clear(){
+            x.value = "";
+        }
+        function Del(){
+            x.value = x.value.slice(0,-1);
+        }
+        function display(n){
+            x.value = x.value + n;
+        }
+        function output(){
+            try {
+                x.value = eval(x.value);
+            } catch (error) {
+                x.value = "Error: Invalid formula";
+            }
+        }
+    </script>
+
+</body>
+</html>
+</html>
