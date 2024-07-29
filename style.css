@@ -72,7 +72,7 @@ header .toggle{
     background-repeat: no-repeat;
 }
 header .toggle.active{
-    background: url(https://Siddhantshinde10.github.io/Portfolio/images/menu.png);
+    background: url(https://Siddhantshinde10.github.io/Portfolio/images/close.png);
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
